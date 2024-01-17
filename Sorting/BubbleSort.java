@@ -26,3 +26,4 @@ public class BubbleSort {
         printarr(arr);
     }
 }
+//Time Complexity: O(n^2)
