@@ -19,3 +19,4 @@ public class StringCompression {
         System.out.println(Stringcomp(str));
     }
 }
+// Time Complexity: O(n)
