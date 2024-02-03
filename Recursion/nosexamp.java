@@ -4,6 +4,7 @@ public class nosexamp{
             return;
         }
         System.out.println(no);
+        //tail recursion
         printno(no+1);
     }
 
