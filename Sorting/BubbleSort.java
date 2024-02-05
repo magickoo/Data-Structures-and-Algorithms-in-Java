@@ -27,3 +27,5 @@ public class BubbleSort {
     }
 }
 //Time Complexity: O(n^2)
+//Best Time Complexity: O(n) when array is already sorted
+// Auxiliary space: O(1)
