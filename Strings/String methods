@@ -16,5 +16,4 @@
 
 ### StringBuilder sb = new StringBuilder("hello")
 sb.toString() //coz sb is an object
-
-
+sb.append("Hello")
