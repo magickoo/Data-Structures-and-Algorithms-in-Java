@@ -1,0 +1,20 @@
+String methods
+length()
+charAt(int index): Returns the character at the specified index.
+substring(int beginIndex): Returns a substring starting from the specified index.
+substring(int beginIndex, int endIndex): Returns a substring from the specified begin index to the specified end index (exclusive).
+toLowerCase(): Converts all characters in the string to lowercase.
+toUpperCase(): Converts all characters in the string to uppercase.
+trim(): Removes leading and trailing whitespace from the string.
+equals(Object obj): Compares the string with the specified object for equality.
+equalsIgnoreCase(String anotherString): Compares the string with another string, ignoring case differences.
+startsWith(String prefix): Checks if the string starts with the specified prefix.
+endsWith(String suffix): Checks if the string ends with the specified suffix.
+lastIndexOf() 
+str.indexOf("world"); // Returns the index of the first occurrence of "world"
+
+
+StringBuilder sb = new StringBuilder("hello")
+sb.toString() //coz sb is an object
+
+
