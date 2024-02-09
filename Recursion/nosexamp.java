@@ -7,7 +7,6 @@ public class nosexamp{
         //tail recursion
         printno(no+1);
     }
-
     public static void main(String[] args){
         printno(1);
 
