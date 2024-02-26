@@ -12,7 +12,7 @@
 -endsWith(String suffix): Checks if the string ends with the specified suffix.
 -lastIndexOf() 
 -str.indexOf("world"); // Returns the index of the first occurrence of "world"
-
+-str.replace(" ","") : to remove whitespaces
 
 ### StringBuilder sb = new StringBuilder("hello")
 sb.toString() //coz sb is an object
