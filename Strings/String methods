@@ -13,6 +13,7 @@
 -lastIndexOf() 
 -str.indexOf("world"); // Returns the index of the first occurrence of "world"
 -str.replace(" ","") : to remove whitespaces
+-s = s.replaceAll("[^a-zA-Z0-9]", ""); : to remove all alphanumeric values
 
 ### StringBuilder sb = new StringBuilder("hello")
 sb.toString() //coz sb is an object
