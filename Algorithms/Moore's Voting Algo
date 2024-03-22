@@ -1,0 +1,15 @@
+Approach: 
+Initialize 2 variables:
+Count –  for tracking the count of element
+Element – for which element we are counting
+Traverse through the given array.
+If Count is 0 then store the current element of the array as Element.
+If the current element and Element are the same increase the Count by 1.
+If they are different decrease the Count by 1.
+The integer present in Element should be the result we are expecting 
+
+
+Basically, we are trying to keep track of the occurrences of the majority element and minority elements dynamically. That is why, in iteration 4, the count becomes 0 as the occurrence of Element and the occurrence of the other elements are the same. So, they canceled each other. This is how the process works. The element with the most occurrence will remain and the rest will cancel themselves.
+
+
+Here, we can see that 2 is the majority element. But if in this array, the last two elements were 3, then the Element variable would have stored 3 instead of 2. For that, we need to check if the Element is the majority element by traversing the array once more. But if the question guarantees that the given array contains a majority element, then we can bet the Element will store the majority one.
