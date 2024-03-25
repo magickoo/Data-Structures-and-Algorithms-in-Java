@@ -1,0 +1,54 @@
+1) Memoization O(N), O(N)
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+
+    public static int f(int n,int heights[],int dp[]){
+          if(n==0){
+           return 0;
+       }
+       if(dp[n]!=-1 ){
+           return dp[n];
+       }
+       int step2= Integer.MAX_VALUE;
+
+       int step1= f(n-1,heights,dp) + Math.abs(heights[n]-heights[n-1]);
+       if(n>1){
+            step2 = f(n-2,heights,dp) +Math.abs(heights[n]-heights[n-2]);
+       }
+        dp[n] = Math.min(step1,step2);
+        return dp[n];
+
+    }
+    public static int frogJump(int n, int heights[]) {
+       int dp[] = new int[n+1];
+       for(int i=0;i<dp.length;i++){
+           dp[i]=-1;
+       }
+       int ans= f(n-1,heights,dp);
+       return ans;
+    }
+}
+
+2) Tabulation
+
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+
+    public static int frogJump(int n, int heights[]) {
+       int dp[] = new int[n+1];
+       Arrays.fill(dp,-1);
+       dp[0] = 0;
+      int step2 = Integer.MAX_VALUE;
+      for(int i=1 ;i<n;i++){
+          int step1 = dp[i-1] + Math.abs(heights[i] - heights[i-1]);
+          if(i>1){
+              step2= dp[i-2] +Math.abs(heights[i] -heights[i-2]);
+          }
+            dp[i] = Math.min(step1,step2);
+
+      }
+    return dp[n-1];
+    }
+}
