@@ -1,0 +1,17 @@
+1) HashMap
+-> HashMap<Integer,Character> hm = new HashMap<>();
+methods
+-map.put(1,"c")
+-map.remove(1)
+-map.get(1)
+# to prevent the value keep updating
+- use map.putifabsent(1,"d")
+Iteration
+for(Map.Entry m : hm.entrySet()){    
+    System.out.println(m.getKey()+" "+m.getValue());    
+   }  
+
+2) Hashset
+HashSet<Integer> hs = new HashSet<>();
+-hs.add(1);
+-size()
