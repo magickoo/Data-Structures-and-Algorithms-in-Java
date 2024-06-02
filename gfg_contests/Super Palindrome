@@ -1,0 +1,35 @@
+
+
+class Solution {
+    public static int countSuperPalindrome(int l, int r) {
+        int cnt1=0;
+        int cnt2=0;
+        for(int i=1; i*i<l;i++){
+            String str= Integer.toString(i*i);
+            if(palindrome(str)){
+                cnt1++;
+            }
+        }
+        for(int j=1 ; j*j<=r ;j++){
+         String str= Integer.toString(j*j);
+            if(palindrome(str)){
+                cnt2++;
+            }
+        }
+        return cnt2-cnt1;
+    }
+    public static boolean palindrome(String str){
+       
+        int i=0;
+        int j= str.length()-1;
+       while(i<j){
+         if(str.charAt(i++) != str.charAt(j--)){
+             return false;
+             
+         }
+       }
+         return true;
+    }
+    
+    
+}
